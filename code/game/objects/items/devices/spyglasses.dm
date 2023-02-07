@@ -58,32 +58,6 @@
 	var/cam_range = 1
 	var/datum/movement_detector/tracker
 
-var/delay = 1.5 SECONDS
-var/target = ishuman
-var/obj/item/clothing/under/Under = target.wears_uniform
-
-/obj/item/clothing/accessory/spy_bug/attack(mob/living/carbon/human/M, mob/living/user)
-	if(target && !user.combat_mode)
-		if(target.wear_suitflags_inv & HIDEJUMPSUIT)
-			var/delay = 3 SECONDS
-		if(target.wears_uniform)
-			delay = 1.5 SECONDS
-			if(user == target)
-				delay = NONE
-			else
-				user.visible_message(span_notice("[user] is trying to sneakily pin [src] on [target]'s chest."), \
-					span_notice("You try to sneakily attach [src] on [target]'s chest."))
-				if(Under.attach_accessory(src, user, 0)) //Attach it, do not notify the user of the attachment
-					if(user == target)
-						to_chat(user, span_notice("You attach [src] to [Under]."))
-					else
-						user.visible_message(span_notice("[user] stealthily pins \the [src] on [target]'s chest."), \
-							span_notice("You stealthily attach \the [src] on [target]'s chest."))
-		if(!target.wears_uniform)
-			to_chat(user, span_warning("There's nothing to attach to!"))
-	else
-		..()
-
 /obj/item/clothing/accessory/spy_bug/Initialize(mapload)
 	. = ..()
 	tracker = new /datum/movement_detector(src, CALLBACK(src, PROC_REF(update_view)))
