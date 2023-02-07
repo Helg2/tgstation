@@ -77,6 +77,26 @@
 
 	return ..()
 
+//Attaching accessories on people
+/obj/item/clothing/accessory/proc/attach_accessory(mob/living/carbon/human/M, mob/living/user)obj/item/clothing/under/U, user
+	if(ishuman(M) && !user.combat_mode)
+		if(M.wear_suit)
+			if((M.wear_suit.flags_inv & HIDEJUMPSUIT)) //Check if the jumpsuit is covered
+				to_chat(user, span_warning("[src] can only be pinned on jumpsuits."))
+				return
+		if(M.w_uniform)
+			var/obj/item/clothing/under/U = M.w_uniform
+			var/delay = 2 SECONDS
+			if(user == M)
+				delay = NONE
+			else
+				user.visible_message(span_notice("[user] is trying to attach [src] on [M]'s chest."), \
+					span_notice("You try to attach [src] on [M]'s chest."))
+	else
+		to_chat(user, span_warning("[src] can only be pinned on jumpsuits!"))
+	else
+		..()
+
 /obj/item/clothing/accessory/examine(mob/user)
 	. = ..()
 	. += span_notice("\The [src] can be attached to a uniform. Alt-click to remove it once attached.")
@@ -139,46 +159,28 @@
 	var/medaltype = "medal" //Sprite used for medalbox
 	var/commended = FALSE
 
-//Pinning medals on people
-/obj/item/clothing/accessory/medal/attack(mob/living/carbon/human/M, mob/living/user)
-	if(ishuman(M) && !user.combat_mode)
-
-		if(M.wear_suit)
-			if((M.wear_suit.flags_inv & HIDEJUMPSUIT)) //Check if the jumpsuit is covered
-				to_chat(user, span_warning("Medals can only be pinned on jumpsuits."))
-				return
-
-		if(M.w_uniform)
-			var/obj/item/clothing/under/U = M.w_uniform
-			var/delay = 20
+/obj/item/clothing/accessory/medal/attach_accessory()
+	..()
+	user.visible_message(span_notice("[user] is trying to pin [src] on [M]'s chest."), \
+		span_notice("You try to pin [src] on [M]'s chest."))
+	var/input
+	if(!commended && user != M)
+		input = tgui_input_text(user, "Reason for this commendation? It will be recorded by Nanotrasen.", "Commendation", max_length = 140)
+	if(do_after(user, delay, target = M))
+		if(U.attach_accessory(src, user, 0)) //Attach it, do not notify the user of the attachment
 			if(user == M)
-				delay = 0
+				to_chat(user, span_notice("You attach [src] to [U]."))
 			else
-				user.visible_message(span_notice("[user] is trying to pin [src] on [M]'s chest."), \
-					span_notice("You try to pin [src] on [M]'s chest."))
-			var/input
-			if(!commended && user != M)
-				input = tgui_input_text(user, "Reason for this commendation? It will be recorded by Nanotrasen.", "Commendation", max_length = 140)
-			if(do_after(user, delay, target = M))
-				if(U.attach_accessory(src, user, 0)) //Attach it, do not notify the user of the attachment
-					if(user == M)
-						to_chat(user, span_notice("You attach [src] to [U]."))
-					else
-						user.visible_message(span_notice("[user] pins \the [src] on [M]'s chest."), \
-							span_notice("You pin \the [src] on [M]'s chest."))
-						if(input)
-							SSblackbox.record_feedback("associative", "commendation", 1, list("commender" = "[user.real_name]", "commendee" = "[M.real_name]", "medal" = "[src]", "reason" = input))
-							GLOB.commendations += "[user.real_name] awarded <b>[M.real_name]</b> the <span class='medaltext'>[name]</span>! \n- [input]"
-							commended = TRUE
-							desc += "<br>The inscription reads: [input] - [user.real_name]"
-							M.log_message("was given the following commendation by <b>[key_name(user)]</b>: [input]", LOG_GAME, color = "green")
-							message_admins("<b>[key_name_admin(M)]</b> was given the following commendation by <b>[key_name_admin(user)]</b>: [input]")
-							add_memory_in_range(M, 7, /datum/memory/received_medal, protagonist = M, deuteragonist =  user, medal_type = src, medal_text = input)
-
-		else
-			to_chat(user, span_warning("Medals can only be pinned on jumpsuits!"))
-	else
-		..()
+				user.visible_message(span_notice("[user] pins \the [src] on [M]'s chest."), \
+					span_notice("You pin \the [src] on [M]'s chest."))
+				if(input)
+					SSblackbox.record_feedback("associative", "commendation", 1, list("commender" = "[user.real_name]", "commendee" = "[M.real_name]", "medal" = "[src]", "reason" = input))
+					GLOB.commendations += "[user.real_name] awarded <b>[M.real_name]</b> the <span class='medaltext'>[name]</span>! \n- [input]"
+					commended = TRUE
+					desc += "<br>The inscription reads: [input] - [user.real_name]"
+					M.log_message("was given the following commendation by <b>[key_name(user)]</b>: [input]", LOG_GAME, color = "green")
+					message_admins("<b>[key_name_admin(M)]</b> was given the following commendation by <b>[key_name_admin(user)]</b>: [input]")
+					add_memory_in_range(M, 7, /datum/memory/received_medal, protagonist = M, deuteragonist =  user, medal_type = src, medal_text = input)
 
 /obj/item/clothing/accessory/medal/conduct
 	name = "distinguished conduct medal"

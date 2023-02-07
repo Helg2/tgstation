@@ -102,3 +102,9 @@ A shrill beep coming from your SpySpeks means that they can't connect to the inc
 	newbug.linked_glasses = newglasses
 	newglasses.linked_bug = newbug
 	new /obj/item/paper/fluff/nerddocs(src)
+
+/obj/item/clothing/accessory/spy_bug/attach_accessory
+	..()
+	delay = 1.5 SECONDS
+	user.visible_message(span_notice("[user] is trying to sneakily attach [src] on [M]'s chest."), \
+		span_notice("You try to sneakily attach [src] on [M]'s chest."))
