@@ -1332,7 +1332,7 @@
 "azs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/structure/cable,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/camera/directional/east{
 	c_tag = "Science Server Room";
 	name = "science camera";
@@ -4815,7 +4815,7 @@
 /turf/open/floor/carpet,
 /area/station/command/bridge)
 "bIO" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood,
 /area/station/maintenance/port/aft)
 "bIU" = (
@@ -4836,7 +4836,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "bJk" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
 	},
@@ -5574,7 +5574,7 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/office)
 "bZW" = (
@@ -6787,7 +6787,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/white,
 /area/station/medical/office)
 "cxz" = (
@@ -12086,7 +12086,7 @@
 	},
 /area/station/medical/medbay/central)
 "etv" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/light_construct/small/directional/east,
 /turf/open/floor/wood,
 /area/station/maintenance/port/aft)
@@ -15688,7 +15688,7 @@
 /turf/open/space/basic,
 /area/space)
 "fQo" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/trimline/purple/corner{
 	dir = 4
 	},
@@ -19075,7 +19075,7 @@
 /turf/open/floor/grass,
 /area/station/science/research)
 "haq" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
 "hav" = (
@@ -21801,7 +21801,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
 /area/station/medical/break_room)
@@ -21850,7 +21850,7 @@
 /area/station/maintenance/starboard/aft)
 "iaO" = (
 /obj/effect/turf_decal/siding/purple,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/office)
@@ -22832,7 +22832,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "irL" = (
@@ -26301,7 +26301,7 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "juH" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/firealarm/directional/west{
 	pixel_y = -9
 	},
@@ -27246,7 +27246,7 @@
 /turf/open/floor/iron/white,
 /area/station/science/lab)
 "jLo" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "jLw" = (
@@ -28363,7 +28363,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/engineering/break_room)
 "kfu" = (
@@ -29457,7 +29457,7 @@
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
 "kyZ" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -35585,7 +35585,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft/lesser)
 "mHL" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/siding/purple{
 	dir = 6
 	},
@@ -39557,7 +39557,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -40102,7 +40102,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/light/small/directional/east,
 /obj/structure/cable,
@@ -43921,7 +43921,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "pEG" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -50835,7 +50835,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "rYn" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 4
 	},
@@ -51496,7 +51496,7 @@
 /area/station/medical/storage)
 "sjx" = (
 /obj/structure/cable,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -53089,7 +53089,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/purple/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -54407,7 +54407,7 @@
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "tiD" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "tja" = (
@@ -54765,7 +54765,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -56639,7 +56639,7 @@
 /obj/effect/turf_decal/trimline/green/filled/corner{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/sign/warning/cold_temp/directional/north,
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 4
@@ -57726,7 +57726,7 @@
 /area/station/science/explab)
 "uqX" = (
 /obj/structure/cable,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/construction/storage_wing)
@@ -59351,7 +59351,7 @@
 /turf/open/floor/iron,
 /area/station/security/prison)
 "uSm" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
@@ -65467,7 +65467,7 @@
 /area/station/hallway/secondary/entry)
 "xaL" = (
 /obj/effect/turf_decal/trimline/red/filled/corner,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/trimline/purple/corner{
 	dir = 1
 	},
@@ -66889,7 +66889,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/construction/storage_wing)
 "xBw" = (

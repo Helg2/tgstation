@@ -297,7 +297,7 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "oA" = (
@@ -510,7 +510,7 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 4
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "Cu" = (
@@ -544,7 +544,7 @@
 /obj/effect/turf_decal/tile/dark/anticorner/contrasted{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "CS" = (
@@ -912,7 +912,7 @@
 /area/shuttle/escape)
 "Tq" = (
 /obj/effect/turf_decal/tile/dark/anticorner/contrasted,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "TL" = (
@@ -966,7 +966,7 @@
 	dir = 8
 	},
 /obj/machinery/vending/wallmed/directional/west,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "Vq" = (

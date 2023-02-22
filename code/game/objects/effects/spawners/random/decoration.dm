@@ -122,3 +122,9 @@
 		/obj/item/food/grown/sunflower,
 		/obj/item/food/grown/rose,
 	)
+
+/obj/effect/spawner/random/decoration/plant
+	name = "random plant spawner"
+	icon_state = "random_plant"
+	loot_subtype_path = /obj/item/kirbyplants
+	loot = list()

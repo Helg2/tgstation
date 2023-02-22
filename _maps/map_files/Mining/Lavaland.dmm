@@ -215,7 +215,7 @@
 /turf/open/floor/iron/smooth,
 /area/mine/laborcamp)
 "bK" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -1030,7 +1030,7 @@
 /turf/open/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "gD" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron,
@@ -2003,7 +2003,7 @@
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "lT" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
@@ -4312,7 +4312,7 @@
 /turf/open/floor/plating/lavaland_atmos,
 /area/lavaland/surface/outdoors)
 "zn" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
@@ -5012,7 +5012,7 @@
 /turf/open/floor/iron/smooth,
 /area/mine/laborcamp/quarters)
 "EE" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -5571,7 +5571,7 @@
 /turf/open/floor/plating,
 /area/mine/medical)
 "Ix" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/smooth,
 /area/mine/laborcamp)
@@ -6296,7 +6296,7 @@
 /turf/open/floor/iron,
 /area/mine/living_quarters)
 "MG" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
@@ -6362,7 +6362,7 @@
 /area/mine/lounge)
 "MT" = (
 /obj/machinery/light/directional/north,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
 	},
@@ -6829,7 +6829,7 @@
 /turf/open/floor/iron/checker,
 /area/mine/laborcamp)
 "Qa" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
@@ -7415,7 +7415,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Ub" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/small/directional/west,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -8080,7 +8080,7 @@
 /turf/open/floor/iron/textured_large,
 /area/mine/living_quarters)
 "XW" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/smooth,
 /area/mine/laborcamp)
 "XX" = (
@@ -8158,7 +8158,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Yl" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /turf/open/floor/iron/dark,
 /area/mine/production)

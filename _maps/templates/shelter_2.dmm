@@ -91,7 +91,7 @@
 /area/misc/survivalpod)
 "q" = (
 /obj/structure/tubes,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/pod,
 /area/misc/survivalpod)
 "r" = (

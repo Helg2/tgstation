@@ -1323,7 +1323,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "Eu" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/powered/hilbertresearchfacility)
 "EE" = (
@@ -2320,7 +2320,7 @@
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/powered/hilbertresearchfacility)
 "Yv" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},

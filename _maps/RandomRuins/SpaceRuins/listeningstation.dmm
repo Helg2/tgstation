@@ -341,7 +341,7 @@
 "ta" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/structure/sign/poster/contraband/random/directional/west,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/listeningstation)
 "tf" = (

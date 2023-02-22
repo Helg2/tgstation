@@ -6491,7 +6491,7 @@
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
 "cau" = (
@@ -7476,7 +7476,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "clt" = (
@@ -12240,7 +12240,7 @@
 	dir = 5
 	},
 /obj/machinery/newscaster/directional/north,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/carpet/royalblue,
 /area/station/service/chapel/office)
 "dIn" = (
@@ -14813,7 +14813,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light_switch/directional/south{
 	pixel_x = 12
 	},
@@ -15281,7 +15281,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/central/fore)
 "eBH" = (
@@ -16346,7 +16346,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "eRy" = (
@@ -18889,7 +18889,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "fyS" = (
@@ -23765,7 +23765,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/monastery)
 "gPH" = (
@@ -23959,7 +23959,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -24166,7 +24166,7 @@
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/east,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "gUP" = (
@@ -25784,7 +25784,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "hqT" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -32986,7 +32986,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/sign/poster/random/directional/west,
 /turf/open/floor/iron/dark/corner{
 	dir = 1
@@ -36973,7 +36973,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /obj/structure/sign/departments/medbay/alt/directional/west,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "kyj" = (
@@ -37325,7 +37325,7 @@
 /turf/closed/wall,
 /area/station/engineering/storage/tech)
 "kEm" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/structure/sign/poster/contraband/self_ai_liberation{
 	pixel_x = -32
 	},
@@ -37379,7 +37379,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/execution/education)
 "kFl" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -40105,7 +40105,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "lrk" = (
@@ -45828,7 +45828,7 @@
 /area/station/maintenance/fore)
 "mZS" = (
 /obj/machinery/light/directional/east,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "mZT" = (
@@ -48784,7 +48784,7 @@
 /area/station/maintenance/department/bridge)
 "nUf" = (
 /obj/machinery/newscaster/directional/north,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "nUi" = (
@@ -50809,7 +50809,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/fore)
 "oAO" = (
@@ -50889,7 +50889,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "oBA" = (
@@ -53496,7 +53496,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/science/research)
 "pmI" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
@@ -56665,7 +56665,7 @@
 /area/station/security/execution/transfer)
 "qhZ" = (
 /obj/machinery/light/directional/north,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "qic" = (
@@ -56705,7 +56705,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark/corner,
 /area/station/hallway/primary/starboard)
 "qiL" = (
@@ -58774,7 +58774,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "qQc" = (
@@ -60107,7 +60107,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/carpet/royalblue,
 /area/station/service/chapel/office)
 "riX" = (
@@ -67669,7 +67669,7 @@
 /area/station/science/robotics/lab)
 "tmj" = (
 /obj/machinery/light/directional/west,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "tmp" = (
@@ -71602,7 +71602,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
@@ -73028,7 +73028,7 @@
 /turf/closed/wall,
 /area/station/engineering/gravity_generator)
 "uOd" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/monastery)
 "uOo" = (
@@ -76885,7 +76885,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "vPz" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/status_display/ai/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
@@ -80364,7 +80364,7 @@
 /area/station/command/heads_quarters/cmo)
 "wKb" = (
 /obj/structure/railing/corner,
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
@@ -84594,7 +84594,7 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "xWm" = (
-/obj/item/kirbyplants/random,
+/obj/effect/spawner/random/decoration/plant,
 /obj/machinery/status_display/ai/directional/east,
 /obj/machinery/camera/directional/north{
 	c_tag = "ai_upload Turrets";
