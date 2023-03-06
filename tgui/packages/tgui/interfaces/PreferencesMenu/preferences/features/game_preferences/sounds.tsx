@@ -13,6 +13,13 @@ export const sound_announcements: FeatureToggle = {
   component: CheckboxInput,
 };
 
+export const sound_vox: FeatureToggle = {
+  name: 'Enable vox sounds',
+  category: 'SOUND',
+  description: 'When enabled, hear AI vox commands.',
+  component: CheckboxInput,
+};
+
 export const sound_combatmode: FeatureToggle = {
   name: 'Enable combat mode sound',
   category: 'SOUND',

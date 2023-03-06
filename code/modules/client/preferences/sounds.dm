@@ -10,6 +10,12 @@
 	savefile_key = "sound_announcements"
 	savefile_identifier = PREFERENCE_PLAYER
 
+/// Controls hearing vox announcements
+/datum/preference/toggle/sound_vox
+	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
+	savefile_key = "sound_vox"
+	savefile_identifier = PREFERENCE_PLAYER
+
 /// Controls hearing the combat mode toggle sound
 /datum/preference/toggle/sound_combatmode
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
