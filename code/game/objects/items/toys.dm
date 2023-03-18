@@ -1312,15 +1312,18 @@
 
 /obj/item/toy/reality_pierce/Initialize(mapload)
 	. = ..()
-	name = "\improper" + pick(strings(HERETIC_INFLUENCE_FILE, "drained")) + " " + pick(strings(HERETIC_INFLUENCE_FILE, "prefix")) + " " + pick(strings(HERETIC_INFLUENCE_FILE, "postfix"))
+	generate_name()
 
-/obj/item/storage/box/heretic_box
-	name = "box of pierced realities"
-	desc = "A box containing toys resembling pierced realities."
+/obj/item/toy/reality_pierce/proc/generate_name()
+	name = "\improper" + pick(strings(HERETIC_INFLUENCE_FILE, "drained")) + " " + pick(strings(HERETIC_INFLUENCE_FILE, "prefix")) + " " + pick(strings(HERETIC_INFLUENCE_FILE, "postfix"))
 
 /obj/item/storage/box/heretic_box/PopulateContents()
 	for(var/i in 1 to rand(1,4))
 		new /obj/item/toy/reality_pierce(src)
+
+/obj/item/storage/box/heretic_box
+	name = "box of pierced realities"
+	desc = "A box containing toys resembling pierced realities."
 
 /obj/item/toy/foamfinger
 	name = "foam finger"
