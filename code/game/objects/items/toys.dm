@@ -1317,12 +1317,12 @@
 	icon_state = "reality_smash"
 	item_flags = NO_PIXEL_RANDOM_DROP
 
-/obj/item/toy/reality_smash/Initialize(mapload)
-	. = ..()
-	call(/obj/effect/heretic_influence, generate_name())()
-
 /obj/item/toy/reality_smash/proc/generate_name()
 	name = "\improper" + pick(strings(HERETIC_INFLUENCE_FILE, "prefix")) + " " + pick(strings(HERETIC_INFLUENCE_FILE, "postfix"))
+
+/obj/item/toy/reality_smash/Initialize(mapload)
+	. = ..()
+	generate_name()
 
 /obj/item/storage/box/heretic_box/PopulateContents()
 	for(var/i in 1 to rand(1,4))
