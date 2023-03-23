@@ -28,6 +28,14 @@
 		ui = new(user, src, "RoboticsControlConsole", name)
 		ui.open()
 
+/obj/machinery/computer/robotics/emag_act(mob/user)
+	if(obj_flags & EMAGGED)
+		return
+	obj_flags |= EMAGGED
+	req_access = null
+	playsound(src, SFX_SPARKS, 75, TRUE, SILENCED_SOUND_EXTRARANGE)
+	to_chat(user, span_notice("You bypass the [src] software to use the admin commands."))
+
 /obj/machinery/computer/robotics/ui_data(mob/user)
 	var/list/data = list()
 
@@ -36,6 +44,8 @@
 		var/mob/living/silicon/S = user
 		if(S.hack_software)
 			data["can_hack"] = TRUE
+	if(obj_flags & EMAGGED)
+		data["can_hack"] = TRUE
 	else if(isAdminGhostAI(user))
 		data["can_hack"] = TRUE
 
@@ -43,6 +53,9 @@
 	if(isAI(user))
 		var/mob/living/silicon/ai/ai = user
 		data["can_detonate"] = !isnull(ai.malf_picker)
+	if(obj_flags & EMAGGED)
+		data["can_detonate"] = TRUE
+
 
 	var/turf/current_turf = get_turf(src)
 	data["cyborgs"] = list()
@@ -105,27 +118,24 @@
 				to_chat(usr, span_danger("Access Denied."))
 
 		if("killbot") //Malf AIs, and AIs with a combat upgrade, can detonate their cyborgs remotely.
-			if(!isAI(usr))
-				return
-			var/mob/living/silicon/ai/ai = usr
-			if(!ai.malf_picker)
-				return
 			var/mob/living/silicon/robot/target = locate(params["ref"]) in GLOB.silicon_mobs
-			if(!istype(target))
-				return
-			if(target.connected_ai != ai)
-				return
+			if(isAI(usr))
+				var/mob/living/silicon/ai/ai = usr
+				if(!ai.malf_picker)
+					return
+				if(!istype(target))
+					return
+				if(target.connected_ai != ai)
+					return
 			target.self_destruct(usr)
 
 		if("magbot")
-			var/mob/living/silicon/S = usr
-			if((istype(S) && S.hack_software) || isAdminGhostAI(usr))
-				var/mob/living/silicon/robot/R = locate(params["ref"]) in GLOB.silicon_mobs
-				if(istype(R) && !R.emagged && (R.connected_ai == usr || isAdminGhostAI(usr)) && !R.scrambledcodes && can_control(usr, R))
-					log_silicon("[key_name(usr)] emagged [key_name(R)] using robotic console!")
-					message_admins("[ADMIN_LOOKUPFLW(usr)] emagged cyborg [key_name_admin(R)] using robotic console!")
-					R.SetEmagged(TRUE)
-					R.logevent("WARN: root privleges granted to PID [num2hex(rand(1,65535), -1)][num2hex(rand(1,65535), -1)].") //random eight digit hex value. Two are used because rand(1,4294967295) throws an error
+			var/mob/living/silicon/robot/R = locate(params["ref"]) in GLOB.silicon_mobs
+			if(istype(R) && !R.emagged && !R.scrambledcodes && can_control(usr, R))
+				log_silicon("[key_name(usr)] emagged [key_name(R)] using robotic console!")
+				message_admins("[ADMIN_LOOKUPFLW(usr)] emagged cyborg [key_name_admin(R)] using robotic console!")
+				R.SetEmagged(TRUE)
+				R.logevent("WARN: root privleges granted to PID [num2hex(rand(1,65535), -1)][num2hex(rand(1,65535), -1)].") //random eight digit hex value. Two are used because rand(1,4294967295) throws an error
 
 		if("killdrone")
 			if(allowed(usr))
