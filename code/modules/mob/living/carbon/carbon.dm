@@ -1373,8 +1373,10 @@
  * * splatter_direction: Which direction the blood is flying
  * * splatter_strength: How many tiles it can go, and how many items it can pass over and dirty
  */
-/mob/living/carbon/proc/spray_blood(splatter_direction, splatter_strength = 3)
+/mob/living/carbon/proc/spray_blood(mob/living/carbon/target, splatter_direction, splatter_strength = 3)
 	if(!isturf(loc))
+		return
+	if(HAS_TRAIT(target, TRAIT_NOBLOOD))
 		return
 	var/obj/effect/decal/cleanable/blood/hitsplatter/our_splatter = new(loc)
 	our_splatter.add_blood_DNA(GET_ATOM_BLOOD_DNA(src))

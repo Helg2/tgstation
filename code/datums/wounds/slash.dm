@@ -38,8 +38,8 @@
 			old_wound.clear_highest_scar()
 	else
 		set_blood_flow(initial_flow)
-		if(!no_bleeding && attack_direction && victim.blood_volume > BLOOD_VOLUME_OKAY)
-			victim.spray_blood(attack_direction, severity)
+		if(attack_direction && victim.blood_volume > BLOOD_VOLUME_OKAY)
+			victim.spray_blood(victim, attack_direction, severity)
 
 	if(!highest_scar)
 		var/datum/scar/new_scar = new

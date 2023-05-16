@@ -66,12 +66,14 @@
 	var/mob/living/living_target = target
 	if(living_target.blood_volume < BLOOD_VOLUME_SURVIVE)
 		return
-	playsound(target, "sound/effects/wounds/crackandbleed.ogg", 100)
 	playsound(target, 'sound/magic/charge.ogg', 100)
-	var/attack_direction = get_dir(user, living_target)
-	if(iscarbon(living_target))
+	if(iscarbon(living_target) && !(HAS_TRAIT(living_target, TRAIT_NOBLOOD)))
+		var/attack_direction = get_dir(user, living_target)
 		var/mob/living/carbon/carbon_target = living_target
-		carbon_target.spray_blood(attack_direction, 3)
+		carbon_target.spray_blood(carbon_target, attack_direction, 3)
+		playsound(target, "sound/effects/wounds/crackandbleed.ogg", 100)
+	else
+		playsound(target, "sound/effects/wounds/crack2.ogg", 100)
 	living_target.blood_volume -= 50
 	if(!isliving(user))
 		return

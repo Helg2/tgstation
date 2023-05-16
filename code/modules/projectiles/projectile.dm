@@ -290,7 +290,7 @@
 	var/mob/living/L = target
 
 	if(blocked != 100) // not completely blocked
-		if(damage && L.blood_volume && damage_type == BRUTE)
+		if(damage && L.blood_volume && damage_type == BRUTE && !(HAS_TRAIT(L, TRAIT_NOBLOOD)))
 			var/splatter_dir = dir
 			if(starting)
 				splatter_dir = get_dir(starting, target_loca)

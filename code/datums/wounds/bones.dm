@@ -118,12 +118,8 @@
 
 
 /datum/wound/blunt/receive_damage(wounding_type, wounding_dmg, wound_bonus)
-	if(!victim || wounding_dmg < WOUND_MINIMUM_DAMAGE)
+	if(!victim || wounding_dmg < WOUND_MINIMUM_DAMAGE || no_bleeding)
 		return
-	if(ishuman(victim))
-		var/mob/living/carbon/human/human_victim = victim
-		if(HAS_TRAIT(human_victim, TRAIT_NOBLOOD))
-			return
 
 	if(limb.body_zone == BODY_ZONE_CHEST && victim.blood_volume && prob(internal_bleeding_chance + wounding_dmg))
 		var/blood_bled = rand(1, wounding_dmg * (severity == WOUND_SEVERITY_CRITICAL ? 2 : 1.5)) // 12 brute toolbox can cause up to 18/24 bleeding with a severe/critical chest wound
