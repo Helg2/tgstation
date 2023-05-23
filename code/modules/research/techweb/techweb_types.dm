@@ -57,7 +57,7 @@ GLOBAL_LIST_EMPTY(autounlock_techwebs)
 		if(RND_CATEGORY_INITIAL in design.category)
 			add_design_by_id(id)
 		if(RND_CATEGORY_HACKED in design.category)
-			add_design_by_id(id, hacked_designs)
+			add_design_by_id(id, add_to = hacked_designs)
 
 /datum/techweb/autounlocking/add_design(datum/design/design, custom = FALSE, list/add_to)
 	if(!(design.build_type & allowed_buildtypes))
