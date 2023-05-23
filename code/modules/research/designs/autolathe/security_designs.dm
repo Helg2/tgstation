@@ -97,7 +97,7 @@
 /datum/design/handcuffs
 	name = "Handcuffs"
 	id = "handcuffs"
-	build_type = AUTOLATHE
+	build_type = AUTOLATHE | PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*5)
 	build_path = /obj/item/restraints/handcuffs
 	category = list(
@@ -105,14 +105,6 @@
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SECURITY,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/handcuffs/sec
-	id = "handcuffs_s"
-	build_type = PROTOLATHE | AWAY_LATHE
-	category = list(
-		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SECURITY,
-	)
-	autolathe_exportable = FALSE
 
 /datum/design/receiver
 	name = "Modular Receiver"

@@ -136,7 +136,7 @@
 /datum/design/micro_servo
 	name = "Micro Servo"
 	desc = "A stock part used in the construction of various devices."
-	id = "micro_servo"
+	id = "basic_micro_servo"
 	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE
 	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT)
 	build_path = /obj/item/stock_parts/servo
