@@ -570,7 +570,7 @@
 	if(!light_switch)
 		stack_trace("Trying to turn off lights with lightswitch in area without lightswitches. In [(needed_area.type)] to be precise.")
 	else
-		needed_area.update_appearance()
+		light_switch.update_icon_state()
 
 //needs to do its thing before spawn_rivers() is called
 INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
