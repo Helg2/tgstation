@@ -569,6 +569,9 @@
 	if(!located_lightswitch)
 		stack_trace("Trying to turn off lights with lightswitch in area without lightswitches. In [(needed_area.type)] to be precise.")
 	needed_area.lightswitch = FALSE
+	needed_area.update_appearance()
+	for(var/obj/machinery/light_switch/updated_lightswitch in needed_area)
+		updated_lightswitch.update_appearance()
 
 //needs to do its thing before spawn_rivers() is called
 INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
