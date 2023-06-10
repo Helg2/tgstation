@@ -565,12 +565,14 @@
 	var/area/needed_area = get_area(src)
 	if(!needed_area.lightswitch)
 		stack_trace("[src] at [AREACOORD(src)] [(needed_area.type)] tried to turn lights off but they are already off!")
+	needed_area.lightswitch = FALSE
 	var/obj/machinery/light_switch/located_lightswitch = locate(/obj/machinery/light_switch) in needed_area
 	if(!located_lightswitch)
 		stack_trace("Trying to turn off lights with lightswitch in area without lightswitches. In [(needed_area.type)] to be precise.")
-	needed_area.lightswitch = FALSE
-	for(var/obj/machinery/light_switch/updated_lightswitch in needed_area)
-		updated_lightswitch.update_appearance()
+	else
+		var/area/areaarea
+		for(var/obj/machinery/light_switch/updated_lightswitch in areaarea)
+			updated_lightswitch.update_appearance()
 
 //needs to do its thing before spawn_rivers() is called
 INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
