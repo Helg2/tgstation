@@ -570,8 +570,8 @@
 	if(!located_lightswitch)
 		stack_trace("Trying to turn off lights with lightswitch in area without lightswitches. In [(needed_area.type)] to be precise.")
 	else
-		var/area/areaarea
-		for(var/obj/machinery/light_switch/updated_lightswitch in areaarea)
+		var/area/updated_area
+		for(var/obj/machinery/light_switch/updated_lightswitch in updated_area)
 			updated_lightswitch.update_appearance()
 
 //needs to do its thing before spawn_rivers() is called
