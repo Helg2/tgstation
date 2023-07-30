@@ -1,5 +1,4 @@
 //Suits for the pink and grey skeletons! //EVA version no longer used in favor of the Jumpsuit version
-
 /obj/item/clothing/suit/space/eva/plasmaman
 	name = "EVA plasma envirosuit"
 	desc = "A special plasma containment suit designed to be space-worthy, as well as worn over other clothing. Like its smaller counterpart, it can automatically extinguish the wearer in a crisis, and holds twice as many charges."
@@ -12,7 +11,6 @@
 	var/extinguish_cooldown = 100
 	var/extinguishes_left = 10
 
-
 /datum/armor/eva_plasmaman
 	bio = 100
 	fire = 100
@@ -21,7 +19,6 @@
 /obj/item/clothing/suit/space/eva/plasmaman/examine(mob/user)
 	. = ..()
 	. += span_notice("There [extinguishes_left == 1 ? "is" : "are"] [extinguishes_left] extinguisher charge\s left in this suit.")
-
 
 /obj/item/clothing/suit/space/eva/plasmaman/proc/Extinguish(mob/living/carbon/human/H)
 	if(!istype(H))
@@ -36,7 +33,6 @@
 			H.visible_message(span_warning("[H]'s suit automatically extinguishes [H.p_them()]!"),span_warning("Your suit automatically extinguishes you."))
 			H.extinguish_mob()
 			new /obj/effect/particle_effect/water(get_turf(H))
-
 
 //I just want the light feature of helmets
 /obj/item/clothing/head/helmet/space/plasmaman
@@ -116,7 +112,7 @@
 		if(smile == FALSE)
 			var/obj/item/toy/crayon/CR = hitting_item
 			to_chat(user, span_notice("You start drawing a smiley face on the helmet's visor.."))
-			if(do_after(user, 25, target = src))
+			if(do_after(user, 2.5 SECONDS, target = src))
 				smile = TRUE
 				smile_color = CR.paint_color
 				to_chat(user, "You draw a smiley on the helmet visor.")
@@ -124,7 +120,7 @@
 		else
 			to_chat(user, span_warning("Seems like someone already drew something on this helmet's visor!"))
 		return
-	if(istype(hitting_item, /obj/item/clothing/head))
+	if(istype(hitting_item, /obj/item/clothing) && hitting_item.slot_flags & ITEM_SLOT_HEAD)
 		var/obj/item/clothing/hitting_clothing = hitting_item
 		if(hitting_clothing.clothing_flags & PLASMAMAN_HELMET_EXEMPT)
 			to_chat(user, span_notice("You cannot place [hitting_clothing.name] on helmet!"))
