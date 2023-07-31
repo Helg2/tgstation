@@ -6,8 +6,8 @@
 	icon_state = "hardhat0_cakehat"
 	inhand_icon_state = "hardhat0_cakehat"
 	hat_type = "cakehat"
-	lefthand_file = 'icons/mob/inhands/clothing/hats_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/clothing/hats_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/head/hats_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/head/hats_righthand.dmi'
 	armor_type = /datum/armor/none
 	light_range = 2 //luminosity when on
 	light_system = MOVABLE_LIGHT
