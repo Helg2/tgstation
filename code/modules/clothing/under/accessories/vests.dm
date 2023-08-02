@@ -4,8 +4,8 @@
 	desc = "For some classy, murderous fun."
 	icon_state = "waistcoat"
 	inhand_icon_state = "wcoat"
-	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/suits/suits_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/suits/suits_righthand.dmi'
 	minimize_when_attached = FALSE
 	attachment_slot = NONE
 	greyscale_config = /datum/greyscale_config/waistcoat
@@ -17,8 +17,8 @@
 	name = "sheriff vest"
 	desc = "Now you just have to pick your favourite deputy."
 	icon_state = "vest_sheriff"
-	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/suits/suits_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/suits/suits_righthand.dmi'
 	inhand_icon_state = "vest_sheriff"
 	minimize_when_attached = TRUE
 	attachment_slot = NONE
@@ -28,8 +28,8 @@
 	desc = "The final touch that holds it all together."
 	icon_state = "maidcorset"
 	inhand_icon_state = "maidapron"
-	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/suits/suits_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/suits/suits_righthand.dmi'
 	minimize_when_attached = FALSE
 	attachment_slot = NONE
 
@@ -38,7 +38,7 @@
 	desc = "The best part of a maid costume."
 	icon_state = "maidapron"
 	inhand_icon_state = "maidapron"
-	lefthand_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/suits/suits_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/suits/suits_righthand.dmi'
 	minimize_when_attached = FALSE
 	attachment_slot = NONE
