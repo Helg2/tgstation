@@ -6,6 +6,8 @@
 	inhand_icon_state = "plasmaman"
 	icon = 'icons/obj/clothing/under/plasmaman.dmi'
 	worn_icon = 'icons/mob/clothing/under/plasmaman.dmi'
+	lefthand_file = 'icons/mob/inhands/clothing/suits/plasmaman_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing/suits/plasmaman_righthand.dmi'
 	clothing_flags = PLASMAMAN_PREVENT_IGNITION
 	armor_type = /datum/armor/clothing_under/plasmaman
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
