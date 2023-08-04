@@ -177,7 +177,7 @@
 	else
 		set_light_on(FALSE)
 		cut_overlay(helmet_light_icon)
-	update_item_action_buttons()
+	update_item_action_buttons(force = TRUE)
 
 /obj/item/clothing/head/helmet/space/plasmaman/attack_hand_secondary(mob/user)
 	..()
