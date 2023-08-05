@@ -611,7 +611,7 @@
 
 /obj/item/mod/module/hat_stabilizer/proc/place_hat(datum/source, obj/item/hitting_item, mob/user)
 	SIGNAL_HANDLER
-	if(!(hitting_item.slot_flags & ITEM_SLOT_HEAD))
+	if(!istype(hitting_item, /obj/item/clothing/head))
 		return
 	if(!mod.active)
 		balloon_alert(user, "suit must be active!")
